@@ -1,0 +1,268 @@
+{
+  "categories": [
+    {
+      "title": "توسعه نرم‌افزار و آی‌تی",
+      "title_en": "SOFTWARE_DEVELOPMENT_AND_IT",
+      "subcategories": [
+        {
+          "name": "طراحی سایت",
+          "name_en": "WEBSITE_DESIGN"
+        },
+        {
+          "name": "طراحی اپلیکیشن موبایل",
+          "name_en": "MOBILE_APP_DESIGN"
+        },
+        {
+          "name": "اسکریپت نویسی، اتوماسیون و تست نویسی",
+          "name_en": "SCRIPTING_AUTOMATION_AND_TESTING"
+        },
+        {
+          "name": "برنامه نویسی و توسعه نرم افزار",
+          "name_en": "PROGRAMMING_AND_SOFTWARE_DEVELOPMENT"
+        },
+        {
+          "name": "طراحی فروشگاه آنلاین",
+          "name_en": "ONLINE_STORE_DESIGN"
+        },
+        {
+          "name": "طراحی قالب وردپرس",
+          "name_en": "WORDPRESS_THEME_DESIGN"
+        },
+        {
+          "name": "توسعه شبکه، سرور و امنیت وب",
+          "name_en": "NETWORK_SERVER_AND_WEB_SECURITY_DEVELOPMENT"
+        },
+        {
+          "name": "طراحی رابط کاربری UI/UX",
+          "name_en": "UI_UX_DESIGN"
+        },
+        {
+          "name": "طراحی و توسعه بازی",
+          "name_en": "GAME_DESIGN_AND_DEVELOPMENT"
+        }
+      ]
+    },
+    {
+      "title": "محتوا و ترجمه",
+      "title_en": "CONTENT_AND_TRANSLATION",
+      "SUBCATEGORIES": [
+        {
+          "name": "ترجمه",
+          "name_en": "TRANSLATION"
+        },
+        {
+          "name": "پژوهش و مقاله نویسی",
+          "name_en": "RESEARCH_AND_ARTICLE_WRITING"
+        },
+        {
+          "name": "تایپ",
+          "name_en": "TYPING"
+        },
+        {
+          "name": "ویراستاری و نگارش",
+          "name_en": "EDITING_AND_WRITING"
+        },
+        {
+          "name": "تولید محتوا",
+          "name_en": "CONTENT_CREATION"
+        },
+        {
+          "name": "نویسندگی",
+          "name_en": "AUTHORING"
+        },
+        {
+          "name": "انواع گزارش نویسی",
+          "name_en": "VARIOUS_REPORT_WRITING"
+        },
+        {
+          "name": "ایجاد پست وبلاگ",
+          "name_en": "BLOG_POST_CREATION"
+        },
+        {
+          "name": "جست‌وجو و ورود اطلاعات (Data Entry)",
+          "name_en": "DATA_SEARCH_AND_ENTRY"
+        }
+      ]
+    },
+    {
+      "title": "طراحی و خلاقیت",
+      "title_en": "DESIGN_AND_CREATIVITY",
+      "SUBCATEGORIES": [
+        {
+          "name": "طراحی گرافیک",
+          "name_en": "GRAPHIC_DESIGN"
+        },
+        {
+          "name": "تصویرسازی",
+          "name_en": "ILLUSTRATION"
+        },
+        {
+          "name": "طراحی بنر و بیلبورد",
+          "name_en": "BANNER_AND_BILLBOARD_DESIGN"
+        },
+        {
+          "name": "طراحی کاتالوگ، پوستر و بروشور",
+          "name_en": "CATALOG_POSTER_AND_BROCHURE_DESIGN"
+        },
+        {
+          "name": "ساخت انیمیشن و لوگوموشن",
+          "name_en": "ANIMATION_AND_LOGO_MOTION_CREATION"
+        },
+        {
+          "name": "تولید و ویرایش ویدیو",
+          "name_en": "VIDEO_PRODUCTION_AND_EDITING"
+        },
+        {
+          "name": "مدل سازی",
+          "name_en": "MODELING"
+        },
+        {
+          "name": "عکاسی و ادیت تصویر",
+          "name_en": "PHOTOGRAPHY_AND_IMAGE_EDITING"
+        },
+        {
+          "name": "صداگذاری و ویرایش صدا",
+          "name_en": "VOICEOVER_AND_AUDIO_EDITING"
+        },
+        {
+          "name": "نقاشی و طراحی",
+          "name_en": "PAINTING_AND_DRAWING"
+        },
+        {
+          "name": "طراحی صنعتی",
+          "name_en": "INDUSTRIAL_DESIGN"
+        },
+        {
+          "name": "چاپ",
+          "name_en": "PRINTING"
+        },
+        {
+          "name": "طراحی لباس",
+          "name_en": "FASHION_DESIGN"
+        },
+        {
+          "name": "طراحی ست اداری",
+          "name_en": "OFFICE_SET_DESIGN"
+        },
+        {
+          "name": "طراحی پست و استوری شبکه‌های اجتماعی",
+          "name_en": "SOCIAL_MEDIA_POST_AND_STORY_DESIGN"
+        }
+      ]
+    },
+    {
+      "title": "بازاریابی و فروش",
+      "title_en": "MARKETING_AND_SALES",
+      "SUBCATEGORIES": [
+        {
+          "name": "سئو SEO",
+          "name_en": "SEO"
+        },
+        {
+          "name": "تبلیغات",
+          "name_en": "ADVERTISING"
+        },
+        {
+          "name": "بازاریابی اینترنتی و دیجیتال مارکتینگ",
+          "name_en": "INTERNET_AND_DIGITAL_MARKETING"
+        },
+        {
+          "name": "پشتیبانی مشتریان",
+          "name_en": "CUSTOMER_SUPPORT"
+        },
+        {
+          "name": "فروشنده تلفنی و آنلاین",
+          "name_en": "PHONE_AND_ONLINE_SALES"
+        },
+        {
+          "name": "تحقیقات بازار / استراتژی بازاریابی",
+          "name_en": "MARKET_RESEARCH_AND_MARKETING_STRATEGY"
+        },
+        {
+          "name": "دستیار تبلیغات",
+          "name_en": "ADVERTISING_ASSISTANT"
+        },
+        {
+          "name": "تبلیغات اینستاگرام و شبکه‌های اجتماعی",
+          "name_en": "INSTAGRAM_AND_SOCIAL_MEDIA_ADVERTISING"
+        },
+        {
+          "name": "ادمین اینستاگرام و شبکه‌های اجتماعی",
+          "name_en": "INSTAGRAM_AND_SOCIAL_MEDIA_ADMIN"
+        },
+        {
+          "name": "ورود اطلاعات در وبسایت و نرم‌افزار",
+          "name_en": "DATA_ENTRY_IN_WEBSITES_AND_SOFTWARE"
+        },
+        {
+          "name": "استخراج داده و جستوجو در اینترنت",
+          "name_en": "DATA_EXTRACTION_AND_INTERNET_SEARCH"
+        }
+      ]
+    },
+    {
+      "title": "کسب‌وکار",
+      "title_en": "BUSINESS",
+      "SUBCATEGORIES": [
+        {
+          "name": "تجزیه و تحلیل کسب و کار",
+          "name_en": "BUSINESS_ANALYSIS"
+        },
+        {
+          "name": "طرح کسب و کار و مدل مالی",
+          "name_en": "BUSINESS_PLAN_AND_FINANCIAL_MODEL"
+        },
+        {
+          "name": "مالی و حسابداری",
+          "name_en": "FINANCE_AND_ACCOUNTING"
+        },
+        {
+          "name": "مدیریت پروژه",
+          "name_en": "PROJECT_MANAGEMENT"
+        },
+        {
+          "name": "حقوقی و تنظیم قرارداد",
+          "name_en": "LEGAL_AND_CONTRACT_DRAFTING"
+        },
+        {
+          "name": "بازرگانی",
+          "name_en": "TRADE"
+        },
+        {
+          "name": "آنالیز داده و تحلیل",
+          "name_en": "DATA_ANALYSIS_AND_ANALYTICS"
+        },
+        {
+          "name": "کار با اکسل",
+          "name_en": "EXCEL_WORK"
+        },
+        {
+          "name": "استخدام دستیار مجازی",
+          "name_en": "VIRTUAL_ASSISTANT_HIRING"
+        }
+      ]
+    },
+    {
+      "title": "مهندسی و معماری",
+      "title_en": "ENGINEERING_AND_ARCHITECTURE",
+      "SUBCATEGORIES": [
+        {
+          "name": "مهندسی برق، مکانیک، شیمی و غیره",
+          "name_en": "ELECTRICAL_MECHANICAL_CHEMICAL_ENGINEERING"
+        },
+        {
+          "name": "علوم ریاضی و ریاضیات",
+          "name_en": "MATHEMATICAL_SCIENCES_AND_MATHEMATICS"
+        },
+        {
+          "name": "مهندسی معماری، عمران و نقشه کشی",
+          "name_en": "ARCHITECTURE_CIVIL_ENGINEERING_AND_DRAFTING"
+        },
+        {
+          "name": "علوم تجربی",
+          "name_en": "EXPERIMENTAL_SCIENCES"
+        }
+      ]
+    }
+  ]
+}

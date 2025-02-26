@@ -1,0 +1,22 @@
+body {
+    direction: rtl;
+    margin: 0;
+    font-family: "Dana VF", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: "Dana VF", source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Dana VF */
+@font-face {
+    font-family: 'Dana VF';
+    src: url('assets/fonts/Dana VF.woff2') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
