@@ -3,9 +3,6 @@ import '../../index.css';
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import IconButton from "@mui/material/IconButton";
-import Badge from "@mui/material/Badge";
-import NotificationsIcon from "@mui/icons-material/Notifications";
-import AccountCircle from "@mui/icons-material/AccountCircle";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -16,7 +13,8 @@ import {alpha, styled} from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import {Login} from "@mui/icons-material";
 import {Link} from 'react-router-dom';
-import BreadcrumbUtil from "../utility/BreadcrumbUtil";
+import Breadcrumb from "./Breadcrumb";
+import AccountMenu from "./AccountMenu";
 
 
 const Search = styled('div')(({theme}) => ({
@@ -59,42 +57,12 @@ const StyledInputBase = styled(InputBase)(({theme}) => ({
     },
 }));
 
-export default function Header() {
-    const [anchorEl, setAnchorEl] = React.useState(null);
-
-    const isMenuOpen = Boolean(anchorEl);
+export default function ApplicationBar() {
+    const [setAnchorEl] = React.useState(null);
 
     const handleProfileMenuOpen = (event) => {
         setAnchorEl(event.currentTarget);
     };
-
-
-    const handleMenuClose = () => {
-        setAnchorEl(null);
-    };
-
-
-    const menuId = 'primary-search-account-menu';
-    const renderMenu = (
-        <Menu
-            anchorEl={anchorEl}
-            anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-            }}
-            id={menuId}
-            keepMounted
-            transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-            }}
-            open={isMenuOpen}
-            onClose={handleMenuClose}
-        >
-            <MenuItem onClick={handleMenuClose} component={Link} to={'/Dashboard'}>داشبورد</MenuItem>
-            <MenuItem onClick={handleMenuClose}>خروج</MenuItem>
-        </Menu>
-    );
 
     const mobileMenuId = 'primary-search-account-menu-mobile';
     const renderMobileMenu = (
@@ -114,31 +82,9 @@ export default function Header() {
                     size="large"
                     aria-label="show 17 new notifications"
                     color="inherit">
-                    <Badge badgeContent={17} color="error">
-                        <NotificationsIcon/>
-                    </Badge>
-                </IconButton>
-                <p>Notifications</p>
-            </MenuItem>
-            <MenuItem>
-                <IconButton
-                    size="large"
-                    aria-label="show 17 new notifications"
-                    color="inherit">
                     <Login/>
                 </IconButton>
-                <p>Notifications</p>
-            </MenuItem>
-            <MenuItem onClick={handleProfileMenuOpen}>
-                <IconButton
-                    size="large"
-                    aria-label="account of current user"
-                    aria-controls="primary-search-account-menu"
-                    aria-haspopup="true"
-                    color="inherit">
-                    <AccountCircle/>
-                </IconButton>
-                <p>Profile</p>
+                <p>Login</p>
             </MenuItem>
         </Menu>
     );
@@ -164,35 +110,17 @@ export default function Header() {
                         />
                     </Search>
                     <Box sx={{
-                        display: { xs: 'none', md: 'flex' },
+                        display: {xs: 'none', md: 'flex'},
                         justifyContent: 'center',
                         alignItems: 'center',
-                    }}><BreadcrumbUtil/> </Box>
+                    }}><Breadcrumb/> </Box>
                     <Box sx={{flexGrow: 1}}/>
                     <Box sx={{display: {xs: 'none', md: 'flex'}}}>
                         <IconButton size="large" aria-label="show 4 new mails" color="inherit"
                                     component={Link} to={'/Login'}>
                             <Login/>
                         </IconButton>
-                        <IconButton
-                            size="large"
-                            aria-label="show 17 new notifications"
-                            color="inherit">
-                            <Badge badgeContent={17} color="error">
-                                <NotificationsIcon/>
-                            </Badge>
-                        </IconButton>
-                        <IconButton
-                            size="large"
-                            edge="end"
-                            aria-label="account of current user"
-                            aria-controls={menuId}
-                            aria-haspopup="true"
-                            onClick={handleProfileMenuOpen}
-                            color="inherit"
-                        >
-                            <AccountCircle/>
-                        </IconButton>
+                        <AccountMenu/>
                     </Box>
                     <Box sx={{display: {xs: 'flex', md: 'none'}}}>
                         <IconButton
@@ -208,7 +136,6 @@ export default function Header() {
                 </Toolbar>
             </AppBar>
             {renderMobileMenu}
-            {renderMenu}
         </Box>
 
     );

@@ -4,65 +4,71 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import {createTheme} from '@mui/material/styles';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import DescriptionIcon from '@mui/icons-material/Description';
 import LayersIcon from '@mui/icons-material/Layers';
 import {AppProvider} from '@toolpad/core/AppProvider';
 import {DashboardLayout} from '@toolpad/core/DashboardLayout';
 import {useDemoRouter} from '@toolpad/core/internal';
+import {AccountCircleTwoTone, ReceiptLongTwoTone} from "@mui/icons-material";
 
 const NAVIGATION = [
     {
         kind: 'header',
-        title: 'Main items',
+        title: 'آیتم های اصلی',
     },
     {
         segment: 'dashboard',
-        title: 'Dashboard',
-        icon: <DashboardIcon />,
+        title: 'داشبورد',
+        icon: <DashboardIcon/>,
     },
     {
-        segment: 'orders',
-        title: 'Orders',
-        icon: <ShoppingCartIcon />,
+        segment: 'profile',
+        title: 'پروفایل',
+        icon: <AccountCircleTwoTone/>,
+        pathname:'/Profile'
+    },
+    {
+        segment: 'project',
+        title: 'پروژه ها',
+        icon: <ReceiptLongTwoTone/>,
+    },
+    {
+        segment: 'integrations',
+        title: 'تخصیص پروژه',
+        icon: <LayersIcon/>,
     },
     {
         kind: 'divider',
     },
     {
         kind: 'header',
-        title: 'Analytics',
+        title: 'تحلیل',
     },
     {
         segment: 'reports',
-        title: 'Reports',
-        icon: <BarChartIcon />,
+        title: 'گزارشات',
+        icon: <BarChartIcon/>,
         children: [
             {
-                segment: 'sales',
-                title: 'Sales',
-                icon: <DescriptionIcon />,
+                segment: 'endProject',
+                title: 'پروژه های انجام شده',
+                icon: <DescriptionIcon/>,
             },
             {
-                segment: 'traffic',
-                title: 'Traffic',
-                icon: <DescriptionIcon />,
+                segment: 'processProject',
+                title: 'پروژه های در حال اجرا',
+                icon: <DescriptionIcon/>,
             },
         ],
-    },
-    {
-        segment: 'integrations',
-        title: 'Integrations',
-        icon: <LayersIcon />,
-    },
+    }
 ];
 
-const demoTheme = createTheme({
+const dashboardTheme = createTheme({
     cssVariables: {
         colorSchemeSelector: 'data-toolpad-color-scheme',
     },
-    colorSchemes: { light: true, dark: true },
+    colorSchemes: {light: true, dark: true},
     breakpoints: {
         values: {
             xs: 0,
@@ -72,9 +78,13 @@ const demoTheme = createTheme({
             xl: 1536,
         },
     },
+    typography: {
+        fontFamily: 'Dana VF, Arial, sans-serif',
+    },
+    direction: 'rtl',
 });
 
-function DemoPageContent({ pathname }) {
+function PageContent({pathname}) {
     return (
         <Box
             sx={{
@@ -83,19 +93,18 @@ function DemoPageContent({ pathname }) {
                 flexDirection: 'column',
                 alignItems: 'center',
                 textAlign: 'center',
-            }}
-        >
-            <Typography>Dashboard content for {pathname}</Typography>
+            }}>
+            <Typography>داشبورد{pathname}</Typography>
         </Box>
     );
 }
 
-DemoPageContent.propTypes = {
+PageContent.propTypes = {
     pathname: PropTypes.string.isRequired,
 };
 
 function DashboardLayoutBasic(props) {
-    const { window } = props;
+    const {window} = props;
 
     const router = useDemoRouter('/dashboard');
 
@@ -103,18 +112,21 @@ function DashboardLayoutBasic(props) {
     const demoWindow = window !== undefined ? window() : undefined;
 
     return (
-        // preview-start
         <AppProvider
             navigation={NAVIGATION}
+            branding={{
+                logo: <img src="https://mui.com/static/logo.png" alt="MUI logo"/>,
+                title: 'Media Lancer',
+                homeUrl: '/toolpad/core/introduction'
+            }}
             router={router}
-            theme={demoTheme}
+            theme={dashboardTheme}
             window={demoWindow}
         >
             <DashboardLayout>
-                <DemoPageContent pathname={router.pathname} />
+                <PageContent pathname={router.pathname}/>
             </DashboardLayout>
         </AppProvider>
-        // preview-end
     );
 }
 
